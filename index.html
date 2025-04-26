@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Parking Management</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Vehicle Parking Management System</h1>
+
+  <h2>Register New User</h2>
+  <input type="text" id="new_name" placeholder="Name" required />
+  <input type="email" id="new_email" placeholder="Email" required />
+  <input type="password" id="new_password" placeholder="Password" required />
+  <input type="text" id="new_phone" placeholder="Phone" />
+  <select id="new_role">
+    <option value="user">User</option>
+    <option value="admin">Admin</option>
+    <option value="staff">Staff</option>
+  </select>
+  <button onclick="registerUser()">Register User</button>
+
+  <h2>Users List</h2>
+<table>
+  <thead>
+    <tr>
+      <th>User ID</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="user-list"></tbody>
+</table>
+
+  <h2>Add Vehicle</h2>
+  <select id="user_id">
+    <option value="">Select User</option>
+    <!-- Populated dynamically -->
+  </select>
+  <input type="text" id="vehicle_number" placeholder="Vehicle Number" required />
+  <select id="vehicle_type">
+    <option value="car">Car</option>
+    <option value="bike">Bike</option>
+    <option value="truck">Truck</option>
+  </select>
+  <button onclick="addVehicle()">Add Vehicle</button>
+
+  <h2>Vehicles List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>User ID</th>
+        <th>Vehicle Number</th>
+        <th>Type</th>
+        <th>Registered At</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="vehicle-list"></tbody>
+  </table>
+</body>
+<footer>
+  © 2025 Vehicle Parking Management System. All rights reserved.
+</footer>
+
+</html>

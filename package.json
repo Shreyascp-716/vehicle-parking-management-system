@@ -1,0 +1,17 @@
+{
+  "name": "vehicle-parking-system",
+  "version": "1.0.0",
+  "description": "Simple vehicle parking management system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mysql2": "^3.14.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
